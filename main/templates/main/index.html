@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css">
+    <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+    <meta charset="UTF-8">
+    <title>Добавить оборудование</title>
+</head>
+    <body>
+        <div class="fixedContainer">
+                <div class="mainBox">
+
+                    <fieldset class="choiceBox">
+                        <select required name="type" class="choiseInput" id="selectType">
+                            <option disabled selected>Выберите тип оборудования</option>
+                            {% for type in types %}
+                            <option>{{type}}</option>
+                            {% endfor %}
+                        </select>
+                    </fieldset>
+
+                    <fieldset class="inputBox">
+                        <textarea required name="content" placeholder="Введите номера"
+                        id="textContent"></textarea>
+                    </fieldset>
+
+                    <div class="buttonBox">
+                        <button type="submit" class="btn btn-outline-success" id="add">Добавить</button>
+                    </div>
+
+                </div>
+        </div>
+        <div id="catImg">
+            <img src="static/img/cat.png" height="400">
+            <h6 id="catTitle">Проверьте введённые номера или тип оборудования</h6>
+        </div>
+        <div id="haroldImg">
+            <img src="static/img/harold.png" height="400">
+            <h5>Успешно загружены номера: </h5>
+            <h5 id="haroldTitle"></h5>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.fixedContainer {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 6%;
+}
+
+.mainBox {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px 5px #dddddd;
+    border: 2px solid #dddddd;
+    min-height: 400px;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.mainBox fieldset {
+    display: block;
+}
+
+.choiceBox {
+    height: 10%;
+    width: 80%;
+    margin: 0 auto 15px auto;
+
+}
+.choiseInput {
+    border: 2px solid #dedede;
+    border-radius: 5px;
+    height: 35px;
+    width: 250px;
+}
+
+.choiseInput:hover {
+    cursor:pointer;
+}
+
+.inputBox {
+    height: 10%;
+    width: 80%;
+    margin: 0 auto;
+}
+.inputBox textarea{
+    width: 250px;
+    height: 400px;
+    margin: 0 auto 15px auto;
+    font-size: 25px;
+}
+
+
+.buttonBox {
+    height: 10%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.choiceBox option {
+    width: 250px;
+}
+.buttonBox button {
+    width: 250px;
+}
+
+#catImg {
+    position: fixed;
+    top: 20%;
+    left: 5%;
+    display: none;
+}
+
+#catTitle {
+    position: relative;
+    left: 25%;
+}
+
+#haroldImg {
+    position: fixed;
+    top: 20%;
+    right: 2%;
+    display: none;
+}
+#haroldImg h5 {
+    position: relative;
+    right: -200px;
+}
+
+#haroldTitle {
+    width: 150px;
+}
